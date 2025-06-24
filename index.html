@@ -771,7 +771,7 @@ Respond ONLY with the requested information (plain text summary, Chart.js JSON, 
             prompt = `You are a helpful AI assistant. A user has asked a question: "${message}". There is no data currently uploaded. If the user asks for data analysis or charts, please inform them that they need to upload a file first. Otherwise, answer the question generally.`;
         }
         const payload = { contents: [{ role: "user", parts: [{ text: prompt }] }], generationConfig: { responseMimeType: "application/json" }};
-        const apiKey = "AIzaSyCruZliKzBxvsfrEng8CYFBjivaVBvrpy0"; // Replace with your actual Gemini API Key
+        const apiKey = "XXXXXXXXXXXXXXXXXX"; // Replace with your actual Gemini API Key
         const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${apiKey}`;
         try {
             const response = await fetch(apiUrl, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload) });
