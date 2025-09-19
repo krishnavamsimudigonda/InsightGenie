@@ -1,14 +1,14 @@
-# AI Data Analytics Tool
+# InsightGenie
 
 ##  Project Structure
 
 ```
 AI_Data_Analytics_Tool
 ├── frontend/
-│ ├── index.html # Web interface (Tailwind CSS + JavaScript)
-│ └── app.js # Handles UI logic, file upload, queries
+│ ├── index.html # Web interface and Handles UI logic, file upload, queries
+│  
 ├── backend/
-│ ├── main.py # Flask server with routes for preview, clean, query
+│ ├── app.py # Flask server with routes for preview, clean, query
 │ ├── requirements.txt # Python dependencies
 │ └── .env # Secure environment for API key (excluded from repo)
 ```
